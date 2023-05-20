@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Unidad Educativa Fiscomisional "San Juan Evangelista"</title>
+  <meta charset="UTF-8">
+  <meta charset="viewport" content="width=device-width, user-scabale=no, initial-sacale=1, maximum -sacale=1, minimum-sacale=1">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="jquery2.min.js"></script>
+  <link rel="icon" href="LogoUESJE.ico">
+</head>
+<body>
+	<div id="primero">
+   		<video id="mi-video" src="PRUEBITA2.mp4" autoplay  muted type="video/mp4"></video>
+	</div>
+
+	<div id="segundo">
+		<video src="PRUEBA2.mp4" autoplay loop muted type="video/mp4"></video>
+			 <div class="header">
+			 	<div align="right"><img src="Logo.png" margin-right="2px" width="80" height="68.2"></div>
+			 	<div class="navigation">
+					 <li><a class="Inicio" href="#">Inicio</a></li>
+					 <li><a class="Quienes" href="#">Quienes Somos</a></li>
+					 <li><a class="Oferta" href="#">Oferta Educativa</a></li>
+					 <li><a class="Entretenimiento" href="#">Entretenimiento</a></li>
+					 <li><a class="Contacto" href="#">Contacto</a></li>
+      			</div>
+      		</div>
+      		<div>
+      			<h2>Hermanitas de la Anunciación</h2>
+      		</div>
+      	<div>
+      		<h1>Unidad Educativa Fiscomisonal<p>"San Juan Evangelista"</p></h1>
+      	</div>
+  	</div>
+</body>
+</html>
+<script type="text/javascript">
+  $(document).ready(function(){
+      $("#segundo").hide();
+      $("#mi-video").on('ended', function(){
+        $("#primero").hide();
+        $("#segundo").show();
+      });
+});
+</script>
